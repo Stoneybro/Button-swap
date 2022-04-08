@@ -150,7 +150,7 @@ h4{
 .rowsub2 span{
     margin-left: 10px;
 }
-#bnb{
+.bnb{
     color: rgba(0, 0, 0, 0.8);
     font-weight: 700;
 }
@@ -185,7 +185,50 @@ h4{
     margin-top: 1rem;
     font-weight: 600;
 }
-
+section{
+    background-color: white;
+    max-width: 28rem;
+    margin: 2.5rem auto 2.5rem auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    border-radius: 18px;
+}
+.sec1{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.icontext{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.secsub1{
+    text-align: center;
+}
+.secsub1 div:first-child{
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 0.9em;
+}
+.secsub1 div:last-child{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 0.9em;
+}
+.secsub2{
+    text-align: center;
+}
+.secsub2 div:first-child{
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 0.9em;
+}
+.secsub2 div:last-child{
+    color: rgba(22, 199, 132, 1);
+    font-size: 0.9em;
+}
+.graph img{
+    width: 8rem;
+}
 
 
 
