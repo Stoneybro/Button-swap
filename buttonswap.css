@@ -1,0 +1,239 @@
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #E5E5E5;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "kanit";
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    background: white;
+    position: absolute;
+    padding: 0.5rem 4rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: 0;
+    font-family: "kanit";
+    font-size: 20.8px;
+}
+nav li{
+    margin: 0 1rem;
+}
+nav img{
+    width: 1.5em;
+}
+.navone{
+    margin: 0 0.5rem;
+    font-size: 25px;
+    color: #592ADD;
+    font-weight: 600;
+}
+.navtwo{
+    color:  #00000066;
+}
+.navthree{
+    margin: 0 0.5rem;
+}
+nav li:nth-child(8){
+    margin-left: auto;
+    margin-right: 0px;
+}
+nav li:nth-child(3){
+    margin-left: auto;
+}
+nav button{
+    background: #F8F8F8;
+    border:transparent 1px solid;
+    border-radius: 26px;
+    padding: 0.8rem 2.4rem;
+    font-size: 18.8px;
+    color: #592ADD;
+    font-family: "kanit";
+    
+}
+/*swap&liquidity*/
+.minibox{
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    margin: 6rem auto 0 auto;
+    width: 13rem;
+    padding: 0.1rem 1rem;
+    font-family: 'kanit';
+    background-color: white;
+    border-radius: 15px;
+    
+}
+.minibox A{
+    text-decoration: none;
+    color:  #00000066;
+    padding: 0.9rem;
+}
+.minibox A:first-child{
+    border-bottom: #592ADD 2px solid;
+    color: #592ADD;
+}
+
+/*mainbox*/
+main{ 
+    background-color: white;
+    max-width: 40rem;
+    margin: 2rem auto 0 auto;
+    padding: 1.8rem 3rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 23px;
+    
+}
+.firstline{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.firstline img{
+    margin-left: 0.4rem;
+    
+}
+#settings{
+    margin-left: 1.5rem;
+}
+h4{
+    margin-left: 6rem;
+    color: #000000CC;
+}
+.firstlineop{
+    font-size: 0.85em;
+    color: rgba(0, 0, 0, 0.6);
+}
+.trade{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 0.85em;
+    margin: 4px 0 2rem 0;
+}
+.row{
+    background: rgba(243, 243, 243, 1);
+    padding: 0.5rem 2rem;
+    border-radius: 23px;
+}
+.rowsub1{
+    display: flex;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.4);
+}
+.rowsub1 span{
+    color: white;
+    background: rgba(205, 205, 205, 1);
+    border: 1.25px solid rgba(193, 193, 193, 0.5);
+    margin: 0 4px;
+    padding: 4px 7px;
+    border-radius: 4px;
+    font-size: 0.65em;
+}
+.rowsub2{
+    display: flex;
+    align-items: center;
+    margin: 9px 0 20px 0;
+   
+}
+.rowsub2 div{
+    margin-left: auto;
+    font-size: 1.5em;
+}
+.rowsub2 span{
+    margin-left: 10px;
+}
+#bnb{
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 700;
+}
+#bcoin{
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 0.9em;
+}
+.swap{
+   padding: 10px 10px 5px 10px;
+   margin: 1rem auto;
+   display: block;
+   background-color: rgba(243, 243, 243, 1);
+   border-radius: 50%;
+   
+}
+.slip{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.8rem 2rem;
+}
+.slip div:nth-child(2){
+    color: #592ADD;
+}
+.proceed button{
+    color: white;
+    background-color: #592ADD;
+    border: none;
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 0.95em;
+    border-radius: 20px;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width:800px){
+    nav ul{
+        position: absolute;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        padding: 0.8rem 1rem 0.5rem 1rem;
+    }
+    nav img{
+        width: 80%;
+    }
+    nav li{
+        display: none;
+    }
+    nav li:nth-child(1){
+        display: block;
+        margin-bottom: 0;
+    }
+    nav li:nth-child(11){
+        display: block;
+        margin:0 5px 0 auto;
+    }
+    nav li:nth-child(12){
+        display: block;
+        margin:0 0 ;
+    }
+    nav button{
+        padding: 0.5rem 2rem;
+    }
+    #connect{
+        display: none;
+    }
+    .minibox {
+        font-size: 0.8rem;
+    }
+}
