@@ -96,6 +96,7 @@ main{
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+    text-align: center;
 }
 .firstline img{
     margin-left: 0.4rem;
@@ -164,7 +165,6 @@ h4{
    display: block;
    background-color: rgba(243, 243, 243, 1);
    border-radius: 50%;
-   
 }
 .slip{
     display: flex;
@@ -184,6 +184,16 @@ h4{
     border-radius: 20px;
     margin-top: 1rem;
     font-weight: 600;
+    transition-property: background-color,color;
+    transition-duration: 200ms;
+    transition-delay: 100ms;
+    transition-timing-function: ease-in;
+    border: #592ADD 1px solid;
+}
+.proceed button:focus{
+    color: #592ADD;
+    background-color: white;
+    border: #592ADD 1px solid;
 }
 section{
     background-color: white;
@@ -243,7 +253,13 @@ section{
 
 
 
-@media all and (max-width:800px){
+
+@media all and (max-width:810px){
+    body{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        
+    }
     nav ul{
         position: absolute;
         left: 0;
@@ -278,5 +294,53 @@ section{
     }
     .minibox {
         font-size: 0.8rem;
+    }
+    /*mainbox*/
+    .one{
+       display: none;
+    }
+   #settings{
+       margin-left: 6px;
+   }
+    .two span:nth-child(1){
+        display: none;
+    }
+    h4{
+        margin-left: 0;
+    }
+    .one{
+        display: block;
+        visibility: hidden;
+    }
+    #bcoin{
+        display: none;
+    }
+    main{
+        border-radius: 15px;
+        padding: 1.2rem ;
+    }
+  
+    .row{
+        padding: 0.5rem 0.8rem;
+        border-radius: 12px;
+    }
+    .swap img{
+        width: 1.2em;
+    }
+    .bn{
+        font-weight: 600;
+        margin-right: -10px;
+    }
+    .sec1{
+        margin: 10px 0;
+    }
+    
+   
+}
+@media all and (max-width:470px){
+    .graph{
+        display: none;
+        margin-left: -70px;
+        width: 50%;
     }
 }
